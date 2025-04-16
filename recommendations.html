@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatBot - Music Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="recommendations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Menu -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Auditica Logo">
+                <h2>BeatBot</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><i class="fas fa-search"></i> Browse</li>
+                    <li class="active"><i class="fas fa-thumbs-up"></i> Recommend</li>
+                </ul>
+            </nav>
+            <div class="playlists">
+                <h3>Playlists</h3>
+                <ul>
+                    <li>For workspace</li>
+                    <li>Rich Brian's collections</li>
+                    <li>deep focus</li>
+                    <li>Lo-Fi Jazz upbeat</li>
+                    <li>For workplace</li>
+                    <li>Christmas playlist</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content recommendations-content">
+            <h1 class="page-title">Music Recommendations</h1>
+            
+            <!-- Song Search Box -->
+            <div class="song-search-container">
+                <div class="song-search-box">
+                    <h2>Enter your song to get more recommendations!</h2>
+                    <div class="search-input-container">
+                        <input type="text" id="song-input" placeholder="Type a song name..." class="song-search-input">
+                        <button id="search-button" class="search-button">Get Recommendations</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Recommendations Results -->
+            <div id="recommendations-results" class="section" style="display: none;">
+                <div class="section-header">
+                    <h2>Recommended Songs</h2>
+                </div>
+                <div class="horizontal-scroll">
+                    <div id="recommendations-container" class="scroll-content">
+                        <!-- Recommendation cards will be inserted here by JavaScript -->
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Loading Indicator -->
+            <div id="loading-indicator" style="display: none;">
+                <div class="spinner"></div>
+                <p>Finding recommendations...</p>
+            </div>
+            
+            <!-- Error Message -->
+            <div id="error-message" class="error-container" style="display: none;">
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Sorry, we couldn't find that song in our database. Please try another song.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="recommendations.js"></script>
+</body>
+</html>

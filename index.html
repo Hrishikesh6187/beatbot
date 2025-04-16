@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeatBot - Music Recommendation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Menu -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Auditica Logo">
+                <h2>BeatBot</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="active"><i class="fas fa-home"></i> Home</li>
+                    <li><i class="fas fa-search"></i> Browse</li>
+                    <li onclick="goToRecommendations()"><i class="fas fa-thumbs-up"></i> Recommend</li>
+                </ul>
+            </nav>
+            <div class="playlists">
+                <h3>Playlists</h3>
+                <ul>
+                    <li>For workspace</li>
+                    <li>Rich Brian's collections</li>
+                    <li>deep focus</li>
+                    <li>Lo-Fi Jazz upbeat</li>
+                    <li>For workplace</li>
+                    <li>Christmas playlist</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <div class="search-input">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search artists, songs, albums...">
+                    <i class="fas fa-microphone"></i>
+                </div>
+            </div>
+
+            <!-- Song of the Day Section -->
+            <div class="featured-section">
+                <div class="featured-content">
+                    <div class="featured-info">
+                        <span class="featured-label">FEATURED SONG</span>
+                        <h2 class="artist-name">Post Malone</h2>
+                        <h1 class="song-title">Circles</h1>
+                        <div class="controls">
+                            <button class="like-btn"><i class="far fa-heart"></i></button>
+                            <button class="play-btn">Play</button>
+                        </div>
+                    </div>
+                    <div class="featured-image">
+                        <img src="Image1.png" alt="Featured Song">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top 10 Songs Section -->
+            <div class="section">
+                <div class="section-header">
+                    <h2>Top 10 Songs</h2>
+                    <a href="#" class="see-more">See more</a>
+                </div>
+                <div class="horizontal-scroll">
+                    <div class="scroll-content">
+                        <!-- Song Cards -->
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="Image1.png" alt="Song 1">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Red (Taylor's Version)</h3>
+                            <p>Taylor Swift</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="Image1.png" alt="Song 2">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Need To Know</h3>
+                            <p>Doja Cat</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="Image1.png" alt="Song 3">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>After Hours</h3>
+                            <p>The Weeknd</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="Image1.png" alt="Song 4">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>HIT MACHINE</h3>
+                            <p>Soundwave</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="Image1.png" alt="Song 5">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Mistletoe</h3>
+                            <p>Justin Bieber</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="Image1.png" alt="Song 6">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Easy On Me</h3>
+                            <p>Adele</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="Image1.png" alt="Song 7">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Moonlight</h3>
+                            <p>Public Library Commute</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="Image1.png" alt="Song 8">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>SICKO MODE</h3>
+                            <p>Travis Scott ft. Drake</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="Image1.png" alt="Song 9">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>Get Lost</h3>
+                            <p>Vincent Fable</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="Image1.png" alt="Song 10">
+                                <div class="play-overlay">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                            </div>
+                            <h3>I Feel Good</h3>
+                            <p>Pink Sweats</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top 10 Artists Section -->
+            <div class="section">
+                <div class="section-header">
+                    <h2>Top 10 Artists</h2>
+                    <a href="#" class="see-more">See more</a>
+                </div>
+                <div class="horizontal-scroll">
+                    <div class="scroll-content">
+                        <!-- Artist Cards -->
+                        <div class="card artist-card">
+                            <div class="card-image round">
+                                <img src="Image1.png" alt="Artist 1">
+                            </div>
+                            <h3>Way Back Home</h3>
+                            <p>SHAUN</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="card-image round">
+                                <img src="Image1.png" alt="Artist 2">
+                            </div>
+                            <h3>Rockstar</h3>
+                            <p>The Clean Bandit</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="card-image round">
+                                <img src="Image1.png" alt="Artist 3">
+                            </div>
+                            <h3>Graduation</h3>
+                            <p>Kanye West</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="card-image round">
+                                <img src="Image1.png" alt="Artist 4">
+                            </div>
+                            <h3>Stay</h3>
+                            <p>ZEDD</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="card-image round">
+                                <img src="Image1.png" alt="Artist 5">
+                            </div>
+                            <h3>abcdefu</h3>
+                            <p>GAYLE</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="card-image round">
+                                <img src="Image1.png" alt="Artist 6">
+                            </div>
+                            <h3>Bad Habits</h3>
+                            <p>Ed Sheeran</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="card-image round">
+                                <img src="Image1.png" alt="Artist 7">
+                            </div>
+                            <h3>At My Worst</h3>
+                            <p>Pink Sweats</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="card-image round">
+                                <img src="Image1.png" alt="Artist 8">
+                            </div>
+                            <h3>Blinding Lights</h3>
+                            <p>The Weeknd</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="card-image round">
+                                <img src="Image1.png" alt="Artist 9">
+                            </div>
+                            <h3>Levitating</h3>
+                            <p>Dua Lipa</p>
+                        </div>
+                        <div class="card artist-card">
+                            <div class="card-image round">
+                                <img src="Image1.png" alt="Artist 10">
+                            </div>
+                            <h3>Watermelon Sugar</h3>
+                            <p>Harry Styles</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar - Top Streams -->
+        <div class="right-sidebar">
+            <div class="top-streams">
+                <div class="streams-header">
+                    <h3>Top Streams Real-time</h3>
+                    <div class="stream-tabs">
+                        <span class="active">Local</span>
+                        <span>Global</span>
+                    </div>
+                </div>
+                <div class="stream-list">
+                    <!-- Stream Items -->
+                    <div class="stream-item">
+                        <div class="rank">1</div>
+                        <div class="stream-image">
+                            <img src="Image1.png" alt="Stream 1">
+                        </div>
+                        <div class="stream-info">
+                            <h4>Mistletoe</h4>
+                            <p>Justin Bieber</p>
+                        </div>
+                        <div class="stream-duration">3:54</div>
+                        <div class="stream-like"><i class="far fa-heart"></i></div>
+                    </div>
+                    <div class="stream-item">
+                        <div class="rank">2</div>
+                        <div class="stream-image">
+                            <img src="Image1.png" alt="Stream 2">
+                        </div>
+                        <div class="stream-info">
+                            <h4>Easy On Me</h4>
+                            <p>Adele</p>
+                        </div>
+                        <div class="stream-duration">3:54</div>
+                        <div class="stream-like"><i class="far fa-heart"></i></div>
+                    </div>
+                    <div class="stream-item">
+                        <div class="rank">3</div>
+                        <div class="stream-image">
+                            <img src="Image1.png" alt="Stream 3">
+                        </div>
+                        <div class="stream-info">
+                            <h4>Moonlight</h4>
+                            <p>Public Library Commute</p>
+                        </div>
+                        <div class="stream-duration">3:54</div>
+                        <div class="stream-like"><i class="far fa-heart"></i></div>
+                    </div>
+                    <div class="stream-item">
+                        <div class="rank">4</div>
+                        <div class="stream-image">
+                            <img src="Image1.png" alt="Stream 4">
+                        </div>
+                        <div class="stream-info">
+                            <h4>SICKO MODE</h4>
+                            <p>Travis Scott ft. Drake</p>
+                        </div>
+                        <div class="stream-duration">3:54</div>
+                        <div class="stream-like"><i class="far fa-heart"></i></div>
+                    </div>
+                    <div class="stream-item">
+                        <div class="rank">5</div>
+                        <div class="stream-image">
+                            <img src="Image1.png" alt="Stream 5">
+                        </div>
+                        <div class="stream-info">
+                            <h4>Get Lost</h4>
+                            <p>Vincent Fable</p>
+                        </div>
+                        <div class="stream-duration">3:54</div>
+                        <div class="stream-like"><i class="far fa-heart"></i></div>
+                    </div>
+                    <div class="stream-item">
+                        <div class="rank">6</div>
+                        <div class="stream-image">
+                            <img src="Image1.png" alt="Stream 6">
+                        </div>
+                        <div class="stream-info">
+                            <h4>I Feel Good</h4>
+                            <p>Pink Sweats</p>
+                        </div>
+                        <div class="stream-duration">3:54</div>
+                        <div class="stream-like"><i class="far fa-heart"></i></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categories Section -->
+            <div class="categories-section">
+                <div class="categories-header">
+                    <h3>Categories</h3>
+                    <a href="#" class="see-all">See all</a>
+                </div>
+                <div class="categories-grid">
+                    <div class="category-item" style="background-color: #8c67ab;">
+                        <h4>Pop</h4>
+                    </div>
+                    <div class="category-item" style="background-color: #4e6094;">
+                        <h4>Chill</h4>
+                    </div>
+                    <div class="category-item" style="background-color: #477d95;">
+                        <h4>Podcast</h4>
+                    </div>
+                    <div class="category-item" style="background-color: #509c93;">
+                        <h4>Christmas</h4>
+                    </div>
+                    <div class="category-item" style="background-color: #c1748e;">
+                        <h4>Romance</h4>
+                    </div>
+                    <div class="category-item" style="background-color: #af7e57;">
+                        <h4>Hip Hop</h4>
+                    </div>
+                    <div class="category-item" style="background-color: #7d4fa3;">
+                        <h4>Rock</h4>
+                    </div>
+                    <div class="category-item" style="background-color: #4b546a;">
+                        <h4>Jazz</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Player Bar -->
+    <div class="player-bar">
+        <div class="now-playing">
+            <div class="player-controls">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+            <div class="track-info">
+                <div class="track-image">
+                    <img src="Image1.png" alt="Current Track">
+                </div>
+                <div class="track-details">
+                    <p>On The Ground</p>
+                    <p class="artist">Rosé</p>
+                </div>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <span class="current-time">2:45</span>
+            <div class="progress">
+                <div class="progress-filled"></div>
+            </div>
+            <span class="total-time">3:27</span>
+        </div>
+        <div class="volume-controls">
+            <i class="fas fa-volume-up"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-list"></i>
+            <i class="fas fa-volume-mute"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

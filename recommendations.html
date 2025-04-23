@@ -19,18 +19,18 @@
             <nav class="menu">
                 <ul>
                     <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                    <li><i class="fas fa-search"></i> Browse</li>
-                    <li class="active"><i class="fas fa-thumbs-up"></i> Recommend</li>
+                    <li><a href="Browse.html"><i class="fas fa-search"></i> Browse</a></li>
+                    <li class="active"><a href="recommendations.html"><i class="fas fa-thumbs-up"></i> Recommend</a></li>
                 </ul>
             </nav>
             <div class="playlists">
                 <h3>Playlists</h3>
                 <ul>
-                    <li>For workspace</li>
-                    <li>Rich Brian's collections</li>
-                    <li>deep focus</li>
+                    <li>Hrishi's PLaylist</li>
+                    <li>Gym</li>
+                    <li>Country Music</li>
                     <li>Lo-Fi Jazz upbeat</li>
-                    <li>For workplace</li>
+                    <li>Work</li>
                     <li>Christmas playlist</li>
                 </ul>
             </div>
@@ -78,5 +78,41 @@
     </div>
 
     <script src="recommendations.js"></script>
+    <!-- Player Bar -->
+    <div class="player-bar">
+        <div class="now-playing">
+            <div class="player-controls">
+                <i class="fas fa-random"></i>
+                <i class="fas fa-step-backward"></i>
+                <i class="fas fa-pause"></i>
+                <i class="fas fa-step-forward"></i>
+                <i class="fas fa-redo"></i>
+            </div>
+            <div class="track-info">
+                <div class="track-image">
+                    <img src="Image1.png" alt="Current Track">
+                </div>
+                <div class="track-details">
+                    <p>On The Ground</p>
+                    <p class="artist">Rosé</p>
+                </div>
+            </div>
+        </div>
+        <div class="progress-bar">
+            <span class="current-time">2:45</span>
+            <div class="progress">
+                <div class="progress-filled"></div>
+            </div>
+            <span class="total-time">3:27</span>
+        </div>
+        <div class="volume-controls">
+            <i class="fas fa-volume-up"></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-list"></i>
+            <i class="fas fa-volume-mute"></i>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

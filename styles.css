@@ -55,7 +55,7 @@ body {
     align-items: center;
     cursor: pointer;
     transition: background-color 0.3s;
-    color: #b3b3b3;
+    color: white;
 }
 
 .menu li.active {
@@ -72,7 +72,7 @@ body {
 }
 
 .menu li:hover:not(.active) {
-    color: white;
+    color: #b3b3b3;
 }
 
 .playlists {

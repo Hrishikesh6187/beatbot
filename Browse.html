@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Songs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="browse.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Menu -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Auditica Logo">
+                <h2>BeatBot</h2>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="active"><a href="Browse.html"><i class="fas fa-search"></i> Browse</a></li>
+                    <li><a href="recommendations.html"><i class="fas fa-thumbs-up"></i> Recommend</a></li>
+                </ul>
+            </nav>
+            <div class="playlists">
+                <h3>Playlists</h3>
+                <ul>
+                    <li>Hrishi's PLaylist</li>
+                    <li>Gym</li>
+                    <li>Country Music</li>
+                    <li>Lo-Fi Jazz upbeat</li>
+                    <li>Work</li>
+                    <li>Christmas playlist</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <h1 class="page-title">Browse Songs</h1>
+            <div class="browse-search-container">
+                <div class="browse-search-box">
+                    <h2>Search for a song</h2>
+                    <div class="search-input-container">
+                        <input type="text" id="browse-song-input" placeholder="Type a song name..." class="browse-song-search-input">
+                        <button id="browse-search-button" class="browse-search-button">Browse</button>
+                    </div>
+                </div>
+            </div>
+            <div id="browse-results" class="section" style="display: none;">
+                <div class="section-header">
+                    <h2>Song Result</h2>
+                </div>
+                <div id="browse-result-container" class="browse-result-content">
+                    <!-- Song card will be inserted here by JavaScript -->
+                </div>
+            </div>
+            <div id="browse-loading-indicator" style="display: none;">
+                <div class="spinner"></div>
+                <p>Searching for song...</p>
+            </div>
+            <div id="browse-error-container" style="display: none;">
+                <i class="fa fa-exclamation-triangle"></i>
+                <p id="browse-error-message"></p>
+            </div>
+        </div>
+    </div>
+<!-- Player Bar -->
+<div class="player-bar">
+    <div class="now-playing">
+        <div class="player-controls">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="fas fa-pause"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo"></i>
+        </div>
+        <div class="track-info">
+            <div class="track-image">
+                <img src="Image1.png" alt="Current Track">
+            </div>
+            <div class="track-details">
+                <p>On The Ground</p>
+                <p class="artist">Rosé</p>
+            </div>
+        </div>
+    </div>
+    <div class="progress-bar">
+        <span class="current-time">2:45</span>
+        <div class="progress">
+            <div class="progress-filled"></div>
+        </div>
+        <span class="total-time">3:27</span>
+    </div>
+    <div class="volume-controls">
+        <i class="fas fa-volume-up"></i>
+        <i class="fas fa-heart"></i>
+        <i class="fas fa-list"></i>
+        <i class="fas fa-volume-mute"></i>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="browse.js"></script>
+</body>
+</html>
